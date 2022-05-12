@@ -1,0 +1,37 @@
+body {
+    background-color: #1D3557;
+   }
+h1 {
+    color: #fcbb6d;
+    background-color: #685d79;
+}
+ul:nth-of-type(odd){
+    list-style-type: none;
+    background-color: #ab6c82;
+}  
+ul:nth-of-type(even){
+    list-style-type: none;
+    background-color: #685d79;
+}  
+ol {
+   background-color: #d8737f;
+}     
+ol,ul>li {
+    color: #ffffff;
+}
+ol>li:nth-child(4n+1){
+       background-color: #ab6c82;
+       font-weight: bold;
+}
+ol>li:nth-child(4n+3){
+    background-color: #685d79;
+    font-weight: bold;
+}
+ul li::before {
+    content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #fcbb6d; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -2em; /* Also needed for space (tweak if needed) */
+}   
