@@ -1,0 +1,29 @@
+div {
+	/*001*/
+	color: black;
+}
+
+#div1 p {
+	/*101*/
+	color: green;
+}
+#x1 {
+	/*100*/
+	color: brown;
+}
+div #x1 {
+	/*101*/
+	color: red;
+}
+.x2 {
+	/*010*/
+	color: teal;
+}
+p #x2 {
+	/*101*/
+	color: purple;
+}
+div > span {
+	/*002*/
+	color: blue;
+}
